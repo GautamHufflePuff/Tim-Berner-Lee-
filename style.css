@@ -76,27 +76,36 @@ p {
     vertical-align: middle;
 
 }
-.menu{
-    list-style:none;
-    font-family: fantasy;
-    position: absolute;
-    top: 10px;
-    right: 30px;
+.menu {
+    position: fixed;
+    background: darkturquoise;
+    width: 100%;
+    margin-top: 0px;
+    top: 0px;
     z-index: 10;
-    cursor: pointer;
+}
+
+.links {
+    display: inline;
+    padding-left: 33px;
+    padding-right: 25px;
+    font-family: fantasy;
+    font-size: 20px
+}
+.links:hover {
+    font-size: 25px;
+    text-decoration: underline;
 }
 .links{
-float: left;
-color: white;
-padding-top: 5px;
+display: inline;
 padding-left: 9px;
 padding-right: 9px;
-padding-bottom: 5px;
 font-family: fantasy;
-font-size: 20px;
+font-size: 30px;
 }
 .links:hover{
 font-size: 50px;
+text-decoration: underline;
 }
 .octo{
  background: linear-gradient(#17794D 0%, #17794D 100%);padding: 50px;
@@ -115,6 +124,8 @@ scroll-behavior: smooth;
 }
 a{
 text-decoration: none;
+color: cornsilk;
+text-shadow: 2px 2px black;
 }
 .article:hover{
 color: darkblue;
@@ -132,7 +143,22 @@ color: white;
 margin-top: -30px;
 background: linear-gradient(#17794D 0%, #17794D 100%);
 }
-#contacts{
+#contact{
 margin-top: -30px;
 background: linear-gradient(#17794D 0%, #17794D 100%);
+}
+#writings a {
+text-shadow: none !important;
+text-decoration: underline !important;
+color: deepskyblue !important;
+}
+.contact_1 a{
+color: white;
+text-shadow: none;
+}
+.contact_1 h3{
+display: inline;
+}
+#contact iframe{
+width: 100%;
 }
